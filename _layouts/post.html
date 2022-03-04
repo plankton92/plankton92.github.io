@@ -94,6 +94,11 @@ tail_includes:
   {{ content }}
 </div>
 
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}
+
+
 <div class="post-tail-wrapper text-muted">
 
   <!-- categories -->
